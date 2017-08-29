@@ -14,9 +14,7 @@ public class ContextListener {
 	
 	//基本 系统子任务 抽象，调用线程池
 
-	//@Autowired
-	public AmqpTemplate fireTemplate;
-	
+
 	public static HashMap<String,AmqpTemplate> tempste = new HashMap<String,AmqpTemplate>();
 	
 
@@ -24,11 +22,8 @@ public class ContextListener {
 	private void initialize() throws NumberFormatException, Exception {
 		
 		// 初始化数据库
-		/*
-		 * new CarDetectorServer(Integer.parseInt(PropertiesUtils.findPropertiesKey(
-		 * "car.detector.tcp.port"))) .initTcpRevice();// 启动车检仪TcpServer服务
-		 */
-		tempste.put("fire", fireTemplate);
+		
+		tempste.put("fire", null);
 
 		initFireCRERevice();
 	}

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="cc.watchers.stuele.orm.mybatis3.dao.StudentMapper">
+  
+  	<!--
+  		传参可以使用int string model等传入
+  		返回值可以使用List model等返回
+  	 -->
+  
+	<select id="countStudents" resultType="int">
+		select count(*) from student
+	</select>
+  
+  	<!-- Student 可以使用 -->
+	<select id="findStudentById" resultType="Student">
+		select * from student where id = #{id}
+	</select>
+  
+  	<!-- List<Student> 可以使用 -->
+	<select id="selectStudentList" resultType="Student">
+		SELECT id,name,inf FROM student
+	</select>
+	
+	<insert id="insertStudent">
+  		insert into student(name,inf) values (#{name},#{inf,jdbcType=VARCHAR})
+	</insert>
+	
+	
+	<update id="updatestudent">
+  		update student set name = #{name},inf = #{inf} where id = #{id}
+	</update>
+
+	<delete id="deletestudent">
+  		delete from student where id = #{id}
+	</delete>
+  
+</mapper>

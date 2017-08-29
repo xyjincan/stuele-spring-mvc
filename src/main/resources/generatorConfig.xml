@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+	<!--
+		没有用处，待删除
+	 -->
+
+  <mappers>
+    <mapper resource="cc/watchers/stu3ele/orm/mybatis3/mapper/*Mapper.xml"/>
+  </mappers>
+</configuration>

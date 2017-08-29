@@ -12,15 +12,14 @@
 </head>
 <body>
 
-    <p>这里是SpringMVC list页</p>
+    <p>这里是mybatis3 list页</p>
     <p>Welcome to Watchers!</p>
-	<p>count substudent: ${count} </p>
-	<p>findStudentById 6 : ${findone6} </p>
-	<p>findAllstudent1 : ${findAllstudent1} </p>
-	<p>findAllstudent2 : ${findAllstudent2} </p>
+	<p>countStudents: ${countStudents} </p>
+	<p>count mybat: ${mybat} </p>
+	<p>mybat student6: ${student6} </p>
+	<p>student list: ${studentsinfo} </p>
+	<p>mybat list: ${list} </p>
 	
-	<p>findByName : ${findByName} </p>
-	<p>findByInf : ${findByInf} </p>
     <p><em>Thank you for using.</em></p>
     
 </body>
